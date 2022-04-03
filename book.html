@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/e02579d607.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container-fluid">
+              <a class="navbar-brand text-uppercase" href="#">Destination</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active text-black text-uppercase rounded" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase text-black rounded" href="explore.html">Explore</a>
+
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black text-uppercase rounded" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item text-black text-uppercase" href="domestic.html">Domestic Trips</a></li>
+                      <li><a class="dropdown-item text-black text-uppercase" href="int.html">International Trips</a></li>
+                      <li><a class="dropdown-item text-black text-uppercase" href="book.html">Book Appointment</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase text-black rounded" href="contact.html">Contact Us</a>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section id="book">
+        <div class="container-fluid">
+            <h2 class="text-center">Schedule Your Appointments</h2>
+            <div class="container ">
+              <div class="row bookro1 ">
+                 <div class="col-12 col-lg-3 col-md-4">
+                     <label for="" class="form-label">First Name:</label>
+                     <input type="text" class=" form-control bxshd" id="firstname" placeholder="   Enter Your First Name">
+                 </div>
+                 <div class="col-12 col-lg-3 col-md-4">
+                    <label for="" class="form-label as">Last Name:</label>
+                    <input type="text" class=" form-control bxshd" id="lastname" placeholder="   Enter Your Last Name">
+                </div>
+                <div class="col-12 col-lg-3 col-md-4">
+                    <label for="" class="form-label as">Email:</label>
+                    <input type="email" class=" form-control bxshd" id="email" placeholder="   Enter Your Email">
+                </div>
+              </div>
+              <div class="row bookro">
+                <div class="col-12 col-lg-3 col-md-4">
+                    <label for="" class="form-label as">City:</label>
+                    <input type="text" class=" form-control bxshd" id="city" placeholder="  Enter Your City">
+                </div>
+                <div class="col-12 col-lg-3 col-md-4">
+                   <label for="" class="form-label as">Date:</label>
+                   <input type="date" class=" form-control bxshd" id="date" placeholder=" ">
+               </div>
+               <div class="col-12 col-lg-3 col-md-4">
+                   <label for="" class="form-label as">Time:</label>
+                   <input type="time" class=" form-control bxshd" id="time" placeholder="">
+               </div>
+             </div>
+              <button class="btn btn3" id="add-row">Add Appointment</button>
+            </div>
+             </div>
+            <div class="container ">
+
+             <table class="table">
+                    
+                <tr>
+                   <th >All <input type="checkbox" id="select-all"></th>
+                   <th >First Name</th>
+                   <th>Last Name</th>
+                   <th>Email</th>
+                   <th>City</th>
+                   <th>Date</th>
+                   <th>Time</th>
+                </tr>
+              
+
+          
+                   <tr>
+                       <td><input type="checkbox" id="select-row"></td>
+                       <td>Muhammad</td>
+                       <td>Hussain</td>
+                       <td>Hussain9517@hotmail.com</td>
+                       <td>Karachi</td>
+                       <td>2022-03-02</td>
+                       <td>10:30</td>
+                   </tr>
+      
+
+          </table>
+          <button class="btn btn4" id="remove-row">Cancel Appointmemt</button>
+         </div>
+    </section>
+    <section id="footer" class="footmar bookmar">
+        <div class="container-fluid shadow-lg p-3 mb-5 bg-white rounded">
+            
+        <h4 class="text-black text-center">www.destination.com</h4>
+        <p class="text-black text-center pfooter">@Copyright2022</p>
+            
+          </div>
+    </section>
+   
+
+    <script>
+      $(document).ready(function(){
+          $('#add-row').click(function(){
+              var firstname=$('#firstname').val();
+              var lastname=$('#lastname').val();
+              var email=$('#email').val();
+              var city=$('#city').val();
+              var date=$('#date').val();
+              var time=$('#time').val();
+
+              $(".table tbody tr").last().after(
+                  '<tr class="fade-text">' +
+                    '<td> <input type="checkbox" id="select-row"> </td>' +
+                    '<td>' + firstname + '</td>' +
+                    '<td>' + lastname  +  '</td>'+
+                    '<td>' +  email   +    '</td>' +
+                    '<td>' +  city    +    '</td>'  +
+                    '<td>' +  date    +    '</td>' +
+                    '<td>' +  time    +     '</td>' +
+                    
+                    '</tr>'
+                    );
+          });
+          $('#select-all').click(function(){
+              var isSelected=$(this).is(":checked")
+              if (isSelected)
+              {
+                  $(".table tbody tr").each(function(){
+                      $(this).find('input[type="checkbox"]').prop('checked',true);
+                  });
+              }
+              else
+              {
+                $(".table tbody tr").each(function(){
+                      $(this).find('input[type="checkbox"]').prop('checked',false);
+                  })
+              }
+              
+
+          })
+          $("#remove-row").click(function(){
+
+$(".table tbody  tr").each(function(){
+
+    var isChecked=$(this).find('input[type="checkbox"]').is(":checked");
+    var tabelsize=$(".table tbody tr").length;
+if(tabelsize==1){
+
+
+alert("All Rows Cannot be deleted");
+}
+else if(isChecked){
+
+$(this).remove();
+}
+
+
+})
+
+})
+      })
+    </script>
+
+</body>
+</html>
